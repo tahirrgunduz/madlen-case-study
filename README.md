@@ -132,7 +132,8 @@ Sistem, kullanıcıdan gelen metin ve görsel verilerini base64 formatında pake
 - **[!TIP] İşlem Akışı:** Frontend (React) ➔ Multipart Request ➔ Backend (FastAPI) ➔ OpenRouter Vision API ➔ SQLite (Persistans).
 
 
-![Uploading Screenshot 2026-01-18 at 22.59.45.png…]()
+
+<img width="1711" height="957" alt="Screenshot 2026-01-18 at 23 08 00" src="https://github.com/user-attachments/assets/04967b7d-09f2-448f-80fe-fa5bdcc90d60" />
 
 
 
