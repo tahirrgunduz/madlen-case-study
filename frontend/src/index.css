@@ -1,0 +1,15 @@
+
+@import "tailwindcss";
+
+:root { 
+  background-color: #f8fafc !important; 
+  color: #0f172a !important; 
+}
+body { 
+  margin: 0; 
+  background: #f8fafc; 
+}
+
+
+
+
