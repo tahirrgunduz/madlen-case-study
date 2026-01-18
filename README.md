@@ -137,6 +137,40 @@ docker run -d --name jaeger -p 16686:16686 -p 4317:4317 jaegertracing/all-in-one
 <br>
 
 
+
+
+
+## 🖼️ Multi-Modal Veri Akışı
+
+Sistem, kullanıcıdan gelen metin ve görsel verilerini base64 formatında paketleyerek asenkron bir şekilde Backend'e iletir. Aşağıdaki görselde, sistemin bir ekran görüntüsünü başarıyla analiz edip yanıt döndürdüğü süreç görülmektedir.
+
+- **[!TIP] İşlem Akışı:** Frontend (React) ➔ Multipart Request ➔ Backend (FastAPI) ➔ OpenRouter Vision API ➔ SQLite (Persistans).
+
+
+
+
+
+<br>
+<br>
+
+
+## 🕵️ Jaeger ile Uçtan Uca İzleme (Observability)
+Projenin en kritik özelliği, her bir isteğin sistem içinde geçirdiği sürenin OpenTelemetry ile izlenmesidir. Aşağıdaki Jaeger trace çıktısı, bir mesajın veritabanına kaydedilmesi ve API'den yanıt alınması arasındaki tüm "span" (işlem adımı) sürelerini doğrulamaktadır.
+
+API Latency: Dış servis yanıt süreleri milisaniye hassasiyetinde takip edilir.
+
+Database Spans: SQLite yazma süreçlerinin sistem performansına etkisi analiz edilebilir.
+
+
+
+<br>
+
+
+--- 
 *Bu proje, Madlen bünyesinde gerçekleştirilen teknik bir vaka çalışması (Case-Study) olarak geliştirilmiştir.*
+
+
+
+
 
 
