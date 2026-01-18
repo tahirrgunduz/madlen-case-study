@@ -113,21 +113,6 @@ docker run -d --name jaeger -p 16686:16686 -p 4317:4317 jaegertracing/all-in-one
 
 
 
-
-## 🔍 Jaeger ile İzleme (Tracing)
-
-**Erişim:** Jaeger arayüzüne http://localhost:16686 üzerinden erişebilirsiniz.
-
-**Görüntüleme:** Sol paneldeki "Service" kısmından fastapi-service (veya backend servis adınız) seçerek "Find Traces" butonuna basın.
-
-**Analiz:** Uçtan uca mesaj iletim sürelerini, veritabanı sorgu gecikmelerini ve OpenRouter API yanıt sürelerini her bir span (işlem adımı) özelinde detaylıca inceleyebilirsiniz.
-
-
-
-
-<br>
-
-
 ## 📈 Mimari Notlar
 
 - **Tip Güvenliği (Type Safety):** Frontend'de TypeScript interface'leri ile multi-modal veri yapıları standardize edilmiştir.
@@ -155,6 +140,11 @@ Sistem, kullanıcıdan gelen metin ve görsel verilerini base64 formatında pake
 
 
 ## 🕵️ Jaeger ile Uçtan Uca İzleme (Observability)
+
+**Erişim:** Jaeger arayüzüne http://localhost:16686 üzerinden erişebilirsiniz.
+
+**Görüntüleme:** Sol paneldeki "Service" kısmından fastapi-service (veya backend servis adınız) seçerek "Find Traces" butonuna basın.
+
 Projenin en kritik özelliği, her bir isteğin sistem içinde geçirdiği sürenin OpenTelemetry ile izlenmesidir. Aşağıdaki Jaeger trace çıktısı, bir mesajın veritabanına kaydedilmesi ve API'den yanıt alınması arasındaki tüm "span" (işlem adımı) sürelerini doğrulamaktadır.
 
 API Latency: Dış servis yanıt süreleri milisaniye hassasiyetinde takip edilir.
