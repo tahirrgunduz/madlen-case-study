@@ -151,6 +151,12 @@ Sistem, kullanıcıdan gelen metin ve görsel verilerini base64 formatında pake
 
 **Görüntüleme:** Sol paneldeki "Service" kısmından fastapi-service (veya backend servis adınız) seçerek "Find Traces" butonuna basın.
 
+
+
+<img width="1713" height="958" alt="Screenshot 2026-01-18 at 23 08 53" src="https://github.com/user-attachments/assets/6d5da9ce-ecb2-45c1-8325-c492336c7f10" />
+
+
+
 Projenin en kritik özelliği, her bir isteğin sistem içinde geçirdiği sürenin OpenTelemetry ile izlenmesidir. Aşağıdaki Jaeger trace çıktısı, bir mesajın veritabanına kaydedilmesi ve API'den yanıt alınması arasındaki tüm "span" (işlem adımı) sürelerini doğrulamaktadır.
 
 API Latency: Dış servis yanıt süreleri milisaniye hassasiyetinde takip edilir.
