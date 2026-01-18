@@ -161,9 +161,10 @@ Sistem, kullanıcıdan gelen metin ve görsel verilerini base64 formatında pake
 
 Projenin en kritik özelliği, her bir isteğin sistem içinde geçirdiği sürenin OpenTelemetry ile izlenmesidir. Aşağıdaki Jaeger trace çıktısı, bir mesajın veritabanına kaydedilmesi ve API'den yanıt alınması arasındaki tüm "span" (işlem adımı) sürelerini doğrulamaktadır.
 
-API Latency: Dış servis yanıt süreleri milisaniye hassasiyetinde takip edilir.
 
-Database Spans: SQLite yazma süreçlerinin sistem performansına etkisi analiz edilebilir.
+**API Latency:** Dış servis yanıt süreleri milisaniye hassasiyetinde takip edilir.
+
+**Database Spans:** SQLite yazma süreçlerinin sistem performansına etkisi analiz edilebilir.
 
 
 
